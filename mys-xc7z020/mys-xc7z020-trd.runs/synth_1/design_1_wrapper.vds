@@ -1,0 +1,873 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Aug 11 17:57:02 2015
+# Process ID: 2604
+# Log file: D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/synth_1/design_1_wrapper.vds
+# Journal file: D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg400-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property webtalk.parent_dir D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.cache/wt [current_project]
+# set_property parent.project_path D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# add_files D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2014.4/data/ip'.
+# set_property used_in_implementation false [get_files -all d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+# set_property used_in_implementation false [get_files -all D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
+# set_property is_locked true [get_files D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd]
+# read_verilog -library xil_defaultlib D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v
+# read_xdc D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/constrs_1/new/system.xdc
+# set_property used_in_implementation false [get_files D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/constrs_1/new/system.xdc]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# catch { write_hwdef -file design_1_wrapper.hwdef }
+# synth_design -top design_1_wrapper -part xc7z020clg400-1
+Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 266.520 ; gain = 72.949
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:3]
+INFO: [Synth 8-638] synthesizing module 'design_1' [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/hdl/design_1.v:12]
+INFO: [Synth 8-638] synthesizing module 'GND' [D:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:3852]
+INFO: [Synth 8-256] done synthesizing module 'GND' (1#1) [D:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:3852]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:154]
+	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
+	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
+	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
+	Parameter C_M_AXI_GP0_THREAD_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP1_THREAD_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP0_ENABLE_STATIC_REMAP bound to: 0 - type: integer 
+	Parameter C_M_AXI_GP1_ENABLE_STATIC_REMAP bound to: 0 - type: integer 
+	Parameter C_M_AXI_GP0_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP1_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_GP0_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_GP1_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP0_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP1_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP2_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP3_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_ACP_ID_WIDTH bound to: 3 - type: integer 
+	Parameter C_S_AXI_HP0_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP1_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP2_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP3_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_ACP_TRANS_CHECK bound to: 0 - type: integer 
+	Parameter C_NUM_F2P_INTR_INPUTS bound to: 4 - type: integer 
+	Parameter C_FCLK_CLK0_BUF bound to: true - type: string 
+	Parameter C_FCLK_CLK1_BUF bound to: true - type: string 
+	Parameter C_FCLK_CLK2_BUF bound to: false - type: string 
+	Parameter C_FCLK_CLK3_BUF bound to: false - type: string 
+	Parameter C_EMIO_GPIO_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_TRACE_BUFFER bound to: 0 - type: integer 
+	Parameter C_TRACE_BUFFER_FIFO_SIZE bound to: 128 - type: integer 
+	Parameter C_TRACE_BUFFER_CLOCK_DELAY bound to: 12 - type: integer 
+	Parameter USE_TRACE_DATA_EDGE_DETECTOR bound to: 0 - type: integer 
+	Parameter C_TRACE_PIPELINE_WIDTH bound to: 8 - type: integer 
+	Parameter C_PS7_SI_REV bound to: PRODUCTION - type: string 
+	Parameter C_EN_EMIO_ENET0 bound to: 0 - type: integer 
+	Parameter C_EN_EMIO_ENET1 bound to: 0 - type: integer 
+	Parameter C_EN_EMIO_TRACE bound to: 0 - type: integer 
+	Parameter C_DQ_WIDTH bound to: 32 - type: integer 
+	Parameter C_DQS_WIDTH bound to: 4 - type: integer 
+	Parameter C_DM_WIDTH bound to: 4 - type: integer 
+	Parameter C_MIO_PRIMITIVE bound to: 54 - type: integer 
+	Parameter C_PACKAGE_NAME bound to: clg400 - type: string 
+	Parameter C_IRQ_F2P_MODE bound to: DIRECT - type: string 
+	Parameter C_TRACE_INTERNAL_WIDTH bound to: 2 - type: integer 
+	Parameter C_EN_EMIO_PJTAG bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (2#1) [D:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2232]
+INFO: [Synth 8-638] synthesizing module 'BIBUF' [D:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-256] done synthesizing module 'BIBUF' (3#1) [D:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:268]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2233]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2234]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2235]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2236]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2237]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2238]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2239]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2240]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2241]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2242]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2243]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2244]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2245]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2250]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2256]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2256]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2256]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2262]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2268]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2268]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2268]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2268]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2274]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2274]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2274]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2274]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2274]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2274]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2274]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2274]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2274]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2274]
+INFO: [Common 17-14] Message 'Synth 8-4446' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'PS7' [D:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:26452]
+INFO: [Synth 8-256] done synthesizing module 'PS7' (4#1) [D:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:26452]
+WARNING: [Synth 8-3848] Net ENET0_GMII_TX_EN in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:215]
+WARNING: [Synth 8-3848] Net ENET0_GMII_TX_ER in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:216]
+WARNING: [Synth 8-3848] Net ENET0_GMII_TXD in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:232]
+WARNING: [Synth 8-3848] Net ENET1_GMII_TX_EN in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:246]
+WARNING: [Synth 8-3848] Net ENET1_GMII_TX_ER in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:247]
+WARNING: [Synth 8-3848] Net ENET1_GMII_TXD in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:261]
+WARNING: [Synth 8-3848] Net PJTAG_TDO in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:298]
+WARNING: [Synth 8-3848] Net TRACE_CTL_PIPE[0] in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1304]
+WARNING: [Synth 8-3848] Net TRACE_DATA_PIPE[0] in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1305]
+WARNING: [Synth 8-3848] Net TRACE_CLK_OUT in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:407]
+WARNING: [Synth 8-3848] Net ENET0_GMII_COL_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1050]
+WARNING: [Synth 8-3848] Net ENET0_GMII_CRS_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1051]
+WARNING: [Synth 8-3848] Net ENET0_GMII_RXD_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1054]
+WARNING: [Synth 8-3848] Net ENET0_GMII_RX_DV_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1052]
+WARNING: [Synth 8-3848] Net ENET0_GMII_RX_ER_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1053]
+WARNING: [Synth 8-3848] Net ENET1_GMII_COL_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1059]
+WARNING: [Synth 8-3848] Net ENET1_GMII_CRS_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1060]
+WARNING: [Synth 8-3848] Net ENET1_GMII_RXD_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1063]
+WARNING: [Synth 8-3848] Net ENET1_GMII_RX_DV_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1061]
+WARNING: [Synth 8-3848] Net ENET1_GMII_RX_ER_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1062]
+WARNING: [Synth 8-3848] Net FTMD_TRACEIN_ATID_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1072]
+WARNING: [Synth 8-3848] Net FTMD_TRACEIN_DATA_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1070]
+WARNING: [Synth 8-3848] Net FTMD_TRACEIN_VALID_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1071]
+INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (5#1) [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:154]
+WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:505]
+INFO: [Synth 8-256] done synthesizing module 'design_1_processing_system7_0_0' (6#1) [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:57]
+WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' requires 134 connections, but only 76 given [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/hdl/design_1.v:148]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_0_0' [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.vhd:66]
+	Parameter C_OPERATION bound to: not - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'util_vector_logic' declared at 'd:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/ipshared/xilinx.com/util_vector_logic_v2_0/5ac42227/hdl/util_vector_logic.vhd:76' bound to instance 'U0' of component 'util_vector_logic' [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'util_vector_logic__parameterized0' [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/ipshared/xilinx.com/util_vector_logic_v2_0/5ac42227/hdl/util_vector_logic.vhd:88]
+	Parameter C_OPERATION bound to: not - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'util_vector_logic__parameterized0' (7#1) [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/ipshared/xilinx.com/util_vector_logic_v2_0/5ac42227/hdl/util_vector_logic.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'design_1_util_vector_logic_0_0' (8#1) [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_0_1' [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_1/synth/design_1_util_vector_logic_0_1.vhd:66]
+	Parameter C_OPERATION bound to: not - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'util_vector_logic' declared at 'd:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/ipshared/xilinx.com/util_vector_logic_v2_0/5ac42227/hdl/util_vector_logic.vhd:76' bound to instance 'U0' of component 'util_vector_logic' [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_1/synth/design_1_util_vector_logic_0_1.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'design_1_util_vector_logic_0_1' (9#1) [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_1/synth/design_1_util_vector_logic_0_1.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_0_2' [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_2/synth/design_1_util_vector_logic_0_2.vhd:66]
+	Parameter C_OPERATION bound to: not - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'util_vector_logic' declared at 'd:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/ipshared/xilinx.com/util_vector_logic_v2_0/5ac42227/hdl/util_vector_logic.vhd:76' bound to instance 'U0' of component 'util_vector_logic' [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_2/synth/design_1_util_vector_logic_0_2.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'design_1_util_vector_logic_0_2' (10#1) [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_2/synth/design_1_util_vector_logic_0_2.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconcat_0_0' [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 4 - type: integer 
+	Parameter NUM_PORTS bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (11#1) [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconcat_0_0' (12#1) [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:57]
+WARNING: [Synth 8-3848] Net hdmi_clk in module/entity design_1 does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/hdl/design_1.v:83]
+WARNING: [Synth 8-3848] Net hdmi_data in module/entity design_1 does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/hdl/design_1.v:84]
+WARNING: [Synth 8-3848] Net hdmi_de in module/entity design_1 does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/hdl/design_1.v:85]
+WARNING: [Synth 8-3848] Net hdmi_hsync in module/entity design_1 does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/hdl/design_1.v:86]
+WARNING: [Synth 8-3848] Net hdmi_vsync in module/entity design_1 does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/hdl/design_1.v:88]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (13#1) [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/hdl/design_1.v:12]
+WARNING: [Synth 8-350] instance 'design_1_i' of module 'design_1' requires 39 connections, but only 38 given [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+INFO: [Synth 8-638] synthesizing module 'IOBUF' [D:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:12928]
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'IOBUF' (14#1) [D:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:12928]
+WARNING: [Synth 8-3848] Net I2S_SCLK in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:97]
+WARNING: [Synth 8-3848] Net I2S_FSYNC_OUT in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:98]
+WARNING: [Synth 8-3848] Net I2S_DOUT in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:99]
+WARNING: [Synth 8-3848] Net arm_io_bp in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:142]
+WARNING: [Synth 8-3848] Net arm_io_led_r in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:139]
+WARNING: [Synth 8-3848] Net arm_io_led_g in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:141]
+WARNING: [Synth 8-3848] Net arm_io_led_b in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:140]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (15#1) [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:3]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port I2S_SCLK
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port I2S_FSYNC_OUT
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port I2S_DOUT
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port I2S_FSYNC_IN
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port I2S_DIN
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP[5]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP[4]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP[3]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP[2]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP[1]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LN[5]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LN[4]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LN[3]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LN[2]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LN[1]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP6
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP8
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LN8
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[24]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[23]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[22]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[21]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[20]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[19]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[18]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[17]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[16]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[15]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[14]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[13]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[12]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[11]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[10]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[9]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[8]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[7]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[6]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[5]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[4]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[3]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[2]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[1]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[24]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[23]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[22]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[21]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[20]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[19]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[18]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[17]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[16]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[15]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[14]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[13]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[12]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[11]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[10]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[9]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[8]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[7]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[6]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[5]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[4]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[3]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[2]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LN[1]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LN11
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 301.523 ; gain = 107.953
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[63] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[62] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[61] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[60] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[55] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[54] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[53] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[52] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[51] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[50] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[49] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[48] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[47] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[46] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[45] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[44] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[43] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[42] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[41] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[40] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[39] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[38] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[37] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[36] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[35] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[34] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[33] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[32] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[31] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[30] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[29] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[28] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[27] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[26] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[25] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[24] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[23] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[22] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[21] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[20] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[19] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[18] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[17] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[16] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[15] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[14] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[13] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[12] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[11] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[10] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[9] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[8] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[7] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[6] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[5] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[4] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[3] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[2] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[1] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[0] to constant 0 [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:207]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 301.523 ; gain = 107.953
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from D:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from D:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from D:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from D:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg400/Package.xml
+Loading io standards from D:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to anoth XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/constrs_1/new/system.xdc]
+Parsing XDC File [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to anoth XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 558.895 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 558.895 ; gain = 365.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 558.895 ; gain = 365.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/synth_1/dont_touch.xdc, line 7).
+Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0. (constraint file  D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/synth_1/dont_touch.xdc, line 10).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint file  D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/synth_1/dont_touch.xdc, line 13).
+Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_0. (constraint file  D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/synth_1/dont_touch.xdc, line 16).
+Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_1. (constraint file  D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/synth_1/dont_touch.xdc, line 19).
+Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_2. (constraint file  D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/synth_1/dont_touch.xdc, line 22).
+Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0/inst. (constraint file  D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/synth_1/dont_touch.xdc, line 25).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 558.895 ; gain = 365.324
+---------------------------------------------------------------------------------
+ROM "PL_CLK1K" won't be mapped to RAM because address size (21) is larger than maximum supported(18) 
+ROM "LED1_reg" won't be mapped to RAM because it is too sparse.
+WARNING: [Synth 8-3848] Net ENET0_GMII_TX_EN in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:215]
+WARNING: [Synth 8-3848] Net ENET0_GMII_TX_ER in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:216]
+WARNING: [Synth 8-3848] Net ENET0_GMII_TXD in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:232]
+WARNING: [Synth 8-3848] Net ENET1_GMII_TX_EN in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:246]
+WARNING: [Synth 8-3848] Net ENET1_GMII_TX_ER in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:247]
+WARNING: [Synth 8-3848] Net ENET1_GMII_TXD in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:261]
+WARNING: [Synth 8-3848] Net PJTAG_TDO in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:298]
+WARNING: [Synth 8-3848] Net TRACE_CTL_PIPE[0] in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1304]
+WARNING: [Synth 8-3848] Net TRACE_DATA_PIPE[0] in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1305]
+WARNING: [Synth 8-3848] Net TRACE_CLK_OUT in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:407]
+WARNING: [Synth 8-3848] Net ENET0_GMII_COL_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1050]
+WARNING: [Synth 8-3848] Net ENET0_GMII_CRS_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1051]
+WARNING: [Synth 8-3848] Net ENET0_GMII_RXD_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1054]
+WARNING: [Synth 8-3848] Net ENET0_GMII_RX_DV_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1052]
+WARNING: [Synth 8-3848] Net ENET0_GMII_RX_ER_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1053]
+WARNING: [Synth 8-3848] Net ENET1_GMII_COL_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1059]
+WARNING: [Synth 8-3848] Net ENET1_GMII_CRS_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1060]
+WARNING: [Synth 8-3848] Net ENET1_GMII_RXD_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1063]
+WARNING: [Synth 8-3848] Net ENET1_GMII_RX_DV_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1061]
+WARNING: [Synth 8-3848] Net ENET1_GMII_RX_ER_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1062]
+WARNING: [Synth 8-3848] Net FTMD_TRACEIN_ATID_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1072]
+WARNING: [Synth 8-3848] Net FTMD_TRACEIN_DATA_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1070]
+WARNING: [Synth 8-3848] Net FTMD_TRACEIN_VALID_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [d:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1071]
+WARNING: [Synth 8-3848] Net hdmi_clk in module/entity design_1 does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/hdl/design_1.v:83]
+WARNING: [Synth 8-3848] Net hdmi_data in module/entity design_1 does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/hdl/design_1.v:84]
+WARNING: [Synth 8-3848] Net hdmi_de in module/entity design_1 does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/hdl/design_1.v:85]
+WARNING: [Synth 8-3848] Net hdmi_hsync in module/entity design_1 does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/hdl/design_1.v:86]
+WARNING: [Synth 8-3848] Net hdmi_vsync in module/entity design_1 does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/hdl/design_1.v:88]
+WARNING: [Synth 8-3848] Net I2S_SCLK in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:97]
+WARNING: [Synth 8-3848] Net I2S_FSYNC_OUT in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:98]
+WARNING: [Synth 8-3848] Net I2S_DOUT in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:99]
+WARNING: [Synth 8-3848] Net arm_io_bp in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:142]
+WARNING: [Synth 8-3848] Net arm_io_led_r in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:139]
+WARNING: [Synth 8-3848] Net arm_io_led_g in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:141]
+WARNING: [Synth 8-3848] Net arm_io_led_b in module/entity design_1_wrapper does not have driver. [D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/imports/hdl/design_1_wrapper.v:140]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 558.895 ; gain = 365.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module design_1_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module processing_system7_v5_5_processing_system7 
+Detailed RTL Component Info : 
+Module design_1_processing_system7_0_0 
+Detailed RTL Component Info : 
+Module util_vector_logic__parameterized0 
+Detailed RTL Component Info : 
+Module design_1_util_vector_logic_0_0 
+Detailed RTL Component Info : 
+Module design_1_util_vector_logic_0_1 
+Detailed RTL Component Info : 
+Module design_1_util_vector_logic_0_2 
+Detailed RTL Component Info : 
+Module xlconcat 
+Detailed RTL Component Info : 
+Module design_1_xlconcat_0_0 
+Detailed RTL Component Info : 
+Module design_1 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 558.895 ; gain = 365.324
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "PL_CLK1K" won't be mapped to RAM because address size (21) is larger than maximum supported(18) 
+ROM "LED1_reg" won't be mapped to RAM because it is too sparse.
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port I2S_SCLK
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port I2S_FSYNC_OUT
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port I2S_DOUT
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port I2S_FSYNC_IN
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port I2S_DIN
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP[5]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP[4]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP[3]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP[2]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP[1]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LN[5]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LN[4]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LN[3]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LN[2]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LN[1]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP6
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LP8
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B34_LN8
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[24]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[23]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[22]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[21]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[20]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[19]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[18]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[17]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[16]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[15]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[14]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[13]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[12]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[11]
+WARNING: [Synth 8-3331] design design_1_wrapper has unconnected port IO_B35_LP[10]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 558.895 ; gain = 365.324
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 558.895 ; gain = 365.324
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 558.895 ; gain = 365.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 558.895 ; gain = 365.324
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 558.895 ; gain = 365.324
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 558.895 ; gain = 365.324
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 765.234 ; gain = 571.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 780.742 ; gain = 587.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 785.672 ; gain = 592.102
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[63] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[62] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[61] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[60] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[55] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[54] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[53] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[52] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[51] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[50] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[49] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[48] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[47] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[46] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[45] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[44] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[43] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[42] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[41] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[40] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[39] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[38] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[37] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[36] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[35] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[34] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[33] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[32] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin design_1_i:GPIO_0_tri_i[20] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 785.672 ; gain = 592.102
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 785.672 ; gain = 592.102
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 785.672 ; gain = 592.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BIBUF  |   130|
+|2     |BUFG   |     3|
+|3     |CARRY4 |     5|
+|4     |GND    |     1|
+|5     |LUT1   |   113|
+|6     |LUT2   |     3|
+|7     |LUT3   |     5|
+|8     |LUT4   |     3|
+|9     |LUT5   |     6|
+|10    |LUT6   |    12|
+|11    |PS7    |     1|
+|12    |FDCE   |    12|
+|13    |FDPE   |     1|
+|14    |FDRE   |    21|
+|15    |IBUF   |     7|
+|16    |IOBUF  |     2|
+|17    |OBUF   |    24|
+|18    |OBUFT  |     3|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------+-------------------------------------------+------+
+|      |Instance                 |Module                                     |Cells |
++------+-------------------------+-------------------------------------------+------+
+|1     |top                      |                                           |   352|
+|2     |  design_1_i             |design_1                                   |   225|
+|3     |    processing_system7_0 |design_1_processing_system7_0_0            |   221|
+|4     |      inst               |processing_system7_v5_5_processing_system7 |   221|
+|5     |    util_vector_logic_0  |design_1_util_vector_logic_0_0             |     1|
+|6     |    util_vector_logic_1  |design_1_util_vector_logic_0_1             |     1|
+|7     |    util_vector_logic_2  |design_1_util_vector_logic_0_2             |     1|
+|8     |    xlconcat_0           |design_1_xlconcat_0_0                      |     0|
++------+-------------------------+-------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 785.672 ; gain = 592.102
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 162 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:35 . Memory (MB): peak = 785.672 ; gain = 292.883
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 785.672 ; gain = 592.102
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 373 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 791.914 ; gain = 569.613
+# write_checkpoint -noxdef design_1_wrapper.dcp
+# catch { report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 791.914 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 11 17:57:53 2015...

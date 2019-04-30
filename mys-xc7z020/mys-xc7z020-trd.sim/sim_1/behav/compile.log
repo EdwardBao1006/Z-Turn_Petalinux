@@ -1,0 +1,6 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/workspace/mys-xc7z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/zturn_7z020/hdl/zturn_7z020_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mys_xc7z010_trd
+WARNING: [VRFC 10-756] identifier LED1_reg is used before its declaration [D:/workspace/mys-xc7z020/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/zturn_7z020/hdl/zturn_7z020_wrapper.v:156]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/workspace/mys-xc7z020/mys-xc7z020-trd/mys-xc7z020-trd.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,5 @@
+the_ROM_image:
+{
+	[bootloader]D:\workspace\7Z020\mys-xc7z020-trd\mys-xc7z020-trd.sdk\fsbl\Debug\fsbl.elf
+	D:\workspace\7Z020\mys-xc7z020-trd\mys-xc7z020-trd.sdk\fsbl\bootimage\u-boot.elf
+}

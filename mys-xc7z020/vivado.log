@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Jun 11 10:36:58 2018
+# Process ID: 9612
+# Current directory: F:/hard_files/MYiR_ZYNQ/Z-TURN_V12_20171030/05-ProgrammableLogic_Source/7Z020/mys-xc7z020-trd/mys-xc7z020-trd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18396 F:\hard_files\MYiR_ZYNQ\Z-TURN_V12_20171030\05-ProgrammableLogic_Source\7Z020\mys-xc7z020-trd\mys-xc7z020-trd\mys-xc7z020-trd.xpr
+# Log file: F:/hard_files/MYiR_ZYNQ/Z-TURN_V12_20171030/05-ProgrammableLogic_Source/7Z020/mys-xc7z020-trd/mys-xc7z020-trd/vivado.log
+# Journal file: F:/hard_files/MYiR_ZYNQ/Z-TURN_V12_20171030/05-ProgrammableLogic_Source/7Z020/mys-xc7z020-trd/mys-xc7z020-trd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/hard_files/MYiR_ZYNQ/Z-TURN_V12_20171030/05-ProgrammableLogic_Source/7Z020/mys-xc7z020-trd/mys-xc7z020-trd/mys-xc7z020-trd.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'F:/hard_files/MYiR_ZYNQ/Z-TURN_V12_20171030/05-ProgrammableLogic_Source/7Z020/mys-xc7z020-trd/mys-xc7z020-trd'
+INFO: [Project 1-313] Project file moved from 'D:/workspace/7Z020/mys-xc7z020-trd' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'mys-xc7z020-trd.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/hard_software/Zynq7000/Vivado/install/Vivado/2015.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_processing_system7_0_0
+design_1_xlconcat_0_0
+design_1_util_vector_logic_0_0
+design_1_util_vector_logic_0_1
+design_1_util_vector_logic_0_2
+
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201809055647
+set_property PROGRAM.FILE {F:/hard_files/MYiR_ZYNQ/Z-TURN_V12_20171030/05-ProgrammableLogic_Source/7Z020/mys-xc7z020-trd/mys-xc7z020-trd/mys-xc7z020-trd.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {F:/hard_files/MYiR_ZYNQ/Z-TURN_V12_20171030/05-ProgrammableLogic_Source/7Z020/mys-xc7z020-trd/mys-xc7z020-trd/mys-xc7z020-trd.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201809055647

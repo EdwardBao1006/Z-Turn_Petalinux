@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Aug 11 17:58:01 2015
+# Process ID: 4688
+# Log file: D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/impl_1/design_1_wrapper.vdi
+# Journal file: D:/workspace/7Z020/mys-xc7z020-trd/mys-xc7z020-trd.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
